@@ -13,6 +13,9 @@
         "barryvdh/laravel-translation-manager": "^0.6.3",
         "binarytorch/larecipe": "^2.5",
         "braintree/braintree_php": "^6.9",
+        "cashfree/cashfree-payout": "^0.0.11",
+        "cashfree/cashfree-pg": "^4.2",
+        "emcconville/google-map-polyline-encoding-tool": "~1.3",
         "fideloper/proxy": "^4.4",
         "franzose/closure-table": "^6.1",
         "fruitcake/laravel-cors": "^2.0",
@@ -20,24 +23,28 @@
         "guzzlehttp/guzzle": "^7.5",
         "hyn/multi-tenant": "^5.8",
         "intervention/image": "^2.7",
+        "kishanio/ccavenue": "dev-master",
         "laravel-notification-channels/fcm": "^2.5",
         "laravel/framework": "^8.75",
-        "laravel/passport": "~10",
+        "laravel/passport": "*",
         "laravel/sanctum": "^2.11",
         "laravel/socialite": "^5.5",
         "laravel/tinker": "^2.5",
         "league/flysystem-aws-s3-v3": "~1.0",
         "maatwebsite/excel": "^3.1",
+        "mercadopago/dx-php": "^2.6",
         "nicolaslopezj/searchable": "^1.13",
         "prewk/xml-string-streamer": "^1.2",
         "proengsoft/laravel-jsvalidation": "^4.7",
         "ramsey/uuid": "^4.5",
+        "razorpay/razorpay": "^2.9",
         "saikiran/geohash": "^1.0",
         "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/laravel-fractal": "^6.0",
-        "srmklive/paypal": "~3.0",
-        "stripe/stripe-php": "^9.6",
-        "symfony/dom-crawler": "^6.1"
+        "srmklive/paypal": "^3.0",
+        "stripe/stripe-php": "^13.15",
+        "symfony/dom-crawler": "^6.1",
+        "tanmuhittin/laravel-google-translate": "^2.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -86,7 +93,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
